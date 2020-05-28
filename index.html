@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <script src="functions.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Final Project</title>
   </head>
+  
 
   <body>
     <header>
@@ -25,77 +26,47 @@
     </nav>
         
     <div id="description">
-      <div>Welcome! <br><br>Thanks for visiting the Free Learning Resource Finder. Use the form below to filter results by subject and grade. <br>Like our Facebook group, this site lists only FREE resources.</div>
+      <div>Welcome! <br><br>Thanks for visiting the Free Learning Resource Finder. Like our Facebook group, this site lists only FREE resources.<br><br>Use the form below to find resources by selecting either your desired SUBJECT <span>OR</span> your desired GRADE RANGE.</div>
     </div>
        
     <div id="form-container">
       <div id="field-container">
         <div id="form-box-1">
           <h3>Subject</h3>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Math</label><br>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Science/STEM</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">History</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Arts</label><br>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Language Arts</label><br>
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Social Studies</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Geography</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">Whole Curriculum</label>
+          <input type="radio" id="math" class="math-link" name="subject" value="math" onclick="subjectsRadio1('math')">
+          <label for="math">Math</label><br>
+          <input type="radio" id="science" name="subject" value="science" >
+          <label for="science">Science/STEM</label><br>
+          <input type="radio" id="history" name="subject" value="history" >
+          <label for="history">History</label><br>
+          <input type="radio" id="arts" name="subject" value="arts" >
+          <label for="arts">Arts</label><br>
+          <input type="radio" id="language" name="subject" value="language">
+          <label for="language">Language Arts</label><br>
+          <input type="radio" id="social" name="subject" value="social" >
+          <label for="social">Social Studies</label><br>
+          <input type="radio" id="geography" name="subject" value="geography" >
+          <label for="geography">Geography</label><br>
+          <input type="radio" id="whole" name="subject" value="whole" >
+          <label for="whole">Whole Curriculum</label>
         </div>
         <div id="form-box-2">
           <h3>Grade Range</h3>
-          <input type="radio" id="age1" name="age" value="30">
-          <label for="age1">Preschool</label><br>
-          <input type="radio" id="age2" name="age" value="60">
-          <label for="age2">Elementary</label><br>  
-          <input type="radio" id="age3" name="age" value="100">
-          <label for="age3">Middle School</label><br>
-          <input type="radio" id="other" name="gender" value="other">
-          <label for="other">High School</label>
+          <input type="radio" id="preschool" name="grade" value="preschool" onclick="gradesRadio('preschool')">
+          <label for="preschool">Preschool</label><br>
+          <input type="radio" id="elementary" name="grade" value="elementary" >
+          <label for="elementary">Elementary</label><br>  
+          <input type="radio" id="middle" name="grade" value="middle">
+          <label for="middle">Middle School</label><br>
+          <input type="radio" id="high" name="grade" value="high" >
+          <label for="high">High School</label>
         </div>
       </div>
-      <div id="submit-button"> 
-        <input type="submit" value="Submit">
-      </div>
     </div>
-  
   </body>
-
   <footer> </footer>
   
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
